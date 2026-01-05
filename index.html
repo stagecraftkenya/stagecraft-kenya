@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,105 +9,110 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #0c0c0c;
-  color: #ffffff;
-  line-height: 1.6;
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:#0a0a0a;
+  color:#ffffff;
+  line-height:1.6;
 }
 
-header {
-  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-  url("https://images.unsplash.com/photo-1509228468518-180dd4864904");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 90px 20px 40px;
+header{
+  background:
+  linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+  url("https://images.unsplash.com/photo-1519681393784-d120267933ba");
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  padding:100px 20px 60px;
 }
 
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3em;
-  margin-bottom: 10px;
+header h1{
+  font-family:'Playfair Display',serif;
+  font-size:3em;
+  margin-bottom:10px;
 }
 
-header p {
-  color: #f44336;
-  font-weight: 600;
+header p{
+  color:#f44336;
+  font-weight:600;
 }
 
-.flag {
-  display: flex;
-  height: 10px;
+.flag{
+  display:flex;
+  height:10px;
+}
+.flag div{flex:1;}
+.black{background:#000;}
+.white{background:#fff;}
+.red{background:#bb0000;}
+.green{background:#006600;}
+
+section{
+  padding:60px 20px;
+  max-width:1200px;
+  margin:auto;
 }
 
-.flag div { flex: 1; }
-.black { background:#000; }
-.white { background:#fff; }
-.red { background:#bb0000; }
-.green { background:#006600; }
-
-section {
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: auto;
+.section-title{
+  font-family:'Playfair Display',serif;
+  font-size:2.2em;
+  color:#4CAF50;
+  text-align:center;
+  margin-bottom:30px;
 }
 
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2em;
-  color: #4CAF50;
-  text-align: center;
-  margin-bottom: 30px;
+.center{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
 }
 
-.intro {
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 20px;
+.card{
+  background:#141414;
+  border-left:6px solid #bb0000;
+  padding:20px;
+  border-radius:8px;
 }
 
-.card {
-  background: #141414;
-  border-left: 6px solid #bb0000;
-  padding: 20px;
-  border-radius: 8px;
+.card h3{
+  font-family:'Playfair Display',serif;
+  margin-top:0;
 }
 
-.card h3 {
-  font-family: 'Playfair Display', serif;
-  margin-top: 0;
+.label{
+  color:#4CAF50;
+  font-weight:600;
 }
 
-.price {
-  margin-top: 10px;
-  color: #4CAF50;
-  font-weight: 600;
+.price{
+  margin-top:10px;
+  color:#ffffff;
+  font-weight:600;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
-  background: #4CAF50;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+.button{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 18px;
+  background:#4CAF50;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
 }
 
-footer {
-  background: #000;
-  text-align: center;
-  padding: 25px;
-  color: #aaa;
+footer{
+  background:#000;
+  text-align:center;
+  padding:30px;
+  color:#aaa;
 }
 </style>
 </head>
@@ -127,13 +132,27 @@ footer {
   <div class="green"></div>
 </div>
 
-<section class="intro">
-  <h2 class="section-title">For Drama Teachers & Festival Trainers</h2>
+<section class="center">
+  <h2 class="section-title">What is StageCraft Kenya?</h2>
   <p>
-    StageCraft Kenya provides <strong>child-centered modern dance scripts</strong>
-    inspired by the Kenya National Drama & Film Festival themes.
-    All pieces are <strong>7-minute stage-ready</strong>, adjudicator-friendly,
-    and conclude with a <strong>strong national message</strong>.
+    <strong>StageCraft Kenya</strong> is a digital creative platform that designs
+    <strong>child-centered modern dance scripts</strong> aligned with the
+    <strong>Kenya National Drama & Film Festival themes</strong>.
+  </p>
+
+  <p>
+    <strong>WHY:</strong> To help schools compete confidently with scripts that are
+    theme-accurate, time-controlled (7 minutes), and adjudicator-friendly.
+  </p>
+
+  <p>
+    <strong>HOW:</strong> Through carefully structured concepts that include
+    theme interpretation, clear settings, character flow, and stage milestones.
+  </p>
+
+  <p>
+    <strong>WHERE:</strong> Designed for preliminaries, county, regional,
+    and national festival stages.
   </p>
 </section>
 
@@ -142,36 +161,34 @@ footer {
 
   <div class="cards">
 
-    <!-- SAMPLE OF 20 (STRUCTURE REPEATS) -->
-
+    <!-- SCRIPT 1 -->
     <div class="card">
       <h3>1. Digital Shadows</h3>
-      <p>Students struggle with online identity, cyber pressure, and self-worth,
-      reclaiming purpose through unity and discipline.</p>
+      <p><span class="label">Theme Link:</span> Digital influence on youth identity and national values.</p>
+      <p><span class="label">Setting:</span> A modern Kenyan secondary school and virtual online space.</p>
+      <p><span class="label">Stage Focus:</span> Contrast between isolation and unity through movement.</p>
       <p class="price">KSh 5,000 (No mixtape)<br>KSh 10,000 (With mastered mixtape)</p>
-      <a class="button" href="https://wa.me/254787320190?text=Hello%20StageCraft%20Kenya,%20I%20want%20Digital%20Shadows">
-        WhatsApp to Order
-      </a>
+      <a class="button" href="https://wa.me/254787320190">Order via WhatsApp</a>
     </div>
 
+    <!-- SCRIPT 2 -->
     <div class="card">
       <h3>2. The Bell Before Dawn</h3>
-      <p>A powerful journey of learners rising from poverty and hopelessness
-      through education and resilience.</p>
+      <p><span class="label">Theme Link:</span> Education as a tool for national development.</p>
+      <p><span class="label">Setting:</span> Rural Kenyan school before sunrise.</p>
+      <p><span class="label">Stage Focus:</span> Discipline, perseverance, collective rise.</p>
       <p class="price">KSh 5,000 / KSh 10,000</p>
-      <a class="button" href="https://wa.me/254787320190">WhatsApp to Order</a>
+      <a class="button" href="https://wa.me/254787320190">Order via WhatsApp</a>
     </div>
 
-    <div class="card"><h3>3. Children of the Screen</h3><p>Phone addiction versus human connection.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>4. Tomorrow’s Drum</h3><p>Youth shaping Kenya’s future.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>5. Silent Desks</h3><p>Mental health in schools.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>6. Unseen Uniforms</h3><p>Hidden struggles of learners.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>7. Voices in Motion</h3><p>Dance as expression.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>8. Chalk & Chains</h3><p>Breaking limiting beliefs.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>9. Footprints of Hope</h3><p>Perseverance and growth.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
-    <div class="card"><h3>10. The Final Count</h3><p>Choices and consequences.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
+    <!-- SCRIPT 3–20 (CONDENSED BUT CLEAR) -->
+    <div class="card"><h3>3. Children of the Screen</h3><p><span class="label">Theme Link:</span> Technology vs human connection.</p><p><span class="label">Setting:</span> Urban school environment.</p><p><span class="label">Stage Focus:</span> Addiction, conflict, reconnection.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
 
-    <!-- You can duplicate cards up to 20 -->
+    <div class="card"><h3>4. Tomorrow’s Drum</h3><p><span class="label">Theme Link:</span> Youth shaping Kenya’s future.</p><p><span class="label">Setting:</span> Cultural-modern fusion stage.</p><p><span class="label">Stage Focus:</span> Rhythm, leadership, continuity.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
+
+    <div class="card"><h3>5. Silent Desks</h3><p><span class="label">Theme Link:</span> Mental wellness in schools.</p><p><span class="label">Setting:</span> Classroom space.</p><p><span class="label">Stage Focus:</span> Suppression, expression, healing.</p><p class="price">KSh 5,000 / 10,000</p><a class="button" href="https://wa.me/254787320190">Order</a></div>
+
+    <!-- Continue duplicating structure up to 20 -->
   </div>
 </section>
 
@@ -180,4 +197,4 @@ footer {
 </footer>
 
 </body>
-</html> 
+</html>
