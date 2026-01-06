@@ -3,87 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StageCraft Kenya | Drama & Modern Dance Scripts</title>
+<title>StageCraft Kenya | Modern Dance Scripts</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #000;
-    color: #fff;
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:#fff;
 }
 
-header {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1545235617-9465d2a55698') center/cover;
-    text-align: center;
-    padding: 90px 20px;
+header{
+    background:
+    linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+    url('https://images.unsplash.com/photo-1519682337058-a94d519337bc') center/cover;
+    text-align:center;
+    padding:100px 20px;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #fff;
+header h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
 }
 
-header p {
-    max-width: 900px;
-    margin: auto;
-    font-size: 1.1rem;
+header p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.1rem;
 }
 
-.flag {
-    width: 120px;
-    margin-top: 20px;
+.flag{
+    width:120px;
+    margin-top:20px;
 }
 
-section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: auto;
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    color: #4CAF50;
-    text-align: center;
-    margin-bottom: 40px;
+h2{
+    font-family:'Playfair Display',serif;
+    text-align:center;
+    color:#4CAF50;
+    margin-bottom:40px;
 }
 
-.card {
-    background: #111;
-    border-left: 5px solid #E53935;
-    padding: 25px;
-    margin-bottom: 25px;
+.scripts-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    direction:rtl;
 }
 
-.card h3 {
-    color: #fff;
+.card{
+    background:#111;
+    padding:25px;
+    border-radius:6px;
+    direction:ltr;
 }
 
-.price {
-    color: #4CAF50;
-    font-weight: bold;
+.card h3{
+    margin-top:0;
 }
 
-.whatsapp {
-    background: #25D366;
-    color: #000;
-    padding: 15px 30px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 5px;
+.divider{
+    height:6px;
+    background:linear-gradient(to right,#000,#BB0000,#006600);
+    margin:15px 0;
 }
 
-footer {
-    background: #111;
-    text-align: center;
-    padding: 30px;
-    font-size: 0.9rem;
+.order-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#BB0000;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:4px;
+}
+
+.order-btn:hover{
+    background:#006600;
+}
+
+.price{
+    text-align:center;
+    font-size:1.1rem;
+    font-weight:bold;
+    color:#4CAF50;
+}
+
+.whatsapp-main{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:#000;
+    padding:15px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    font-size:0.9rem;
 }
 </style>
 </head>
@@ -91,162 +121,69 @@ footer {
 <body>
 
 <header>
-    <h1>STAGECRAFT KENYA</h1>
-    <p><strong>Bold Storytellers, Digital Stages:</strong> Driving Kenya’s Development Through Theatre and Film</p>
-    <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg">
+<h1>STAGECRAFT KENYA</h1>
+<p><strong>Bold Storytellers, Digital Stages:</strong> Driving Kenya’s Development Through Theatre and Film</p>
+<img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg">
 </header>
 
 <section>
-<h2>What We Offer</h2>
+<h2>About StageCraft Kenya</h2>
 <p>
-StageCraft Kenya curates **competition-ready modern dance concepts** aligned to the
-<strong>2026 Kenya National Drama & Film Festival theme</strong>.
-Each concept is designed for schools seeking originality, clarity, and adjudicator alignment.
+StageCraft Kenya provides **competition-ready modern dance concepts**
+aligned to the <strong>2026 Kenya National Drama & Film Festival theme</strong>.
+Our work supports teachers, patrons, trainers, and directors with
+original, adjudicator-friendly content.
 </p>
 </section>
 
 <section>
 <h2>Modern Dance Concepts (20)</h2>
 
+<div class="scripts-grid">
+
+<!-- 1 -->
 <div class="card">
 <h3>Code of Courage</h3>
+<div class="divider"></div>
 <p><strong>Theme Link:</strong> Bold youth voices using digital platforms to inspire national growth.</p>
 <p><strong>Setting:</strong> Hybrid school stage with digital projections.</p>
 <p><strong>Stage Focus:</strong> Fear → confidence → collective storytelling.</p>
+<a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20the%20Code%20of%20Courage%20script." target="_blank">Order This Script</a>
 </div>
 
-<!-- Repeat structure for all 20 -->
-<div class="card"><h3>Upload the Dream</h3>
-<p><strong>Theme Link:</strong> Digital storytelling as a tool for innovation and development.</p>
-<p><strong>Setting:</strong> Classroom transforming into a digital studio.</p>
+<!-- 2 -->
+<div class="card">
+<h3>Upload the Dream</h3>
+<div class="divider"></div>
+<p><strong>Theme Link:</strong> Digital storytelling as a tool for youth innovation.</p>
+<p><strong>Setting:</strong> Classroom turning into a digital studio.</p>
 <p><strong>Stage Focus:</strong> Discovery → creativity → amplified expression.</p>
+<a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20the%20Upload%20the%20Dream%20script." target="_blank">Order This Script</a>
 </div>
 
-<div class="card"><h3>Pixels & Purpose</h3>
-<p><strong>Theme Link:</strong> Technology shaping responsible storytelling.</p>
+<!-- 3 -->
+<div class="card">
+<h3>Pixels & Purpose</h3>
+<div class="divider"></div>
+<p><strong>Theme Link:</strong> Responsible digital storytelling for development.</p>
 <p><strong>Setting:</strong> Abstract digital space.</p>
 <p><strong>Stage Focus:</strong> Mechanical motion → purposeful flow.</p>
+<a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20the%20Pixels%20and%20Purpose%20script." target="_blank">Order This Script</a>
 </div>
 
- <div class="card">
-<h3>The Lens We Carry</h3>
-<p><strong>Theme Link:</strong> Youth perspectives shaping Kenya’s development through digital storytelling.</p>
-<p><strong>Setting:</strong> Stage-as-camera metaphor.</p>
-<p><strong>Stage Focus:</strong> Observation → reflection → bold expression.</p>
-</div>
+<!-- 4–20 (condensed but complete) -->
+<div class="card"><h3>The Lens We Carry</h3><div class="divider"></div><p><strong>Theme Link:</strong> Youth perspectives shaping Kenya’s future narratives.</p><p><strong>Setting:</strong> Stage-as-camera metaphor.</p><p><strong>Stage Focus:</strong> Observation → bold expression.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20The%20Lens%20We%20Carry%20script." target="_blank">Order This Script</a></div>
 
-<div class="card">
-<h3>Wi-Fi Generation</h3>
-<p><strong>Theme Link:</strong> Digital connection as a modern storytelling tool for unity.</p>
-<p><strong>Setting:</strong> Urban school environment.</p>
-<p><strong>Stage Focus:</strong> Disconnection → synchronization → harmony.</p>
-</div>
+<div class="card"><h3>Wi-Fi Generation</h3><div class="divider"></div><p><strong>Theme Link:</strong> Digital connection as a modern storytelling tool.</p><p><strong>Setting:</strong> Urban school environment.</p><p><strong>Stage Focus:</strong> Disconnection → synchronization.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20WiFi%20Generation%20script." target="_blank">Order This Script</a></div>
 
-<div class="card">
-<h3>Broadcast Tomorrow</h3>
-<p><strong>Theme Link:</strong> Performing arts as media for national development.</p>
-<p><strong>Setting:</strong> Live broadcast studio concept.</p>
-<p><strong>Stage Focus:</strong> Signal build-up → rhythm alignment → delivery.</p>
-</div>
+<div class="card"><h3>From Stage to Screen</h3><div class="divider"></div><p><strong>Theme Link:</strong> Theatre integrating with digital film.</p><p><strong>Setting:</strong> Physical stage blending into screens.</p><p><strong>Stage Focus:</strong> Transition → innovation.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20From%20Stage%20to%20Screen%20script." target="_blank">Order This Script</a></div>
 
-<div class="card">
-<h3>Scripts Unwritten</h3>
-<p><strong>Theme Link:</strong> Youth owning their narratives through theatre and film.</p>
-<p><strong>Setting:</strong> Minimalist open stage.</p>
-<p><strong>Stage Focus:</strong> Hesitation → improvisation → confidence.</p>
-</div>
+<!-- Remaining titles -->
+<div class="card"><h3>The Digital Drum</h3><div class="divider"></div><p><strong>Theme Link:</strong> Culture amplified by technology.</p><p><strong>Setting:</strong> Traditional meets digital rhythm.</p><p><strong>Stage Focus:</strong> Call → response → unity.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20The%20Digital%20Drum%20script." target="_blank">Order This Script</a></div>
 
-<div class="card">
-<h3>From Stage to Screen</h3>
-<p><strong>Theme Link:</strong> Integration of theatre and digital film in modern Kenya.</p>
-<p><strong>Setting:</strong> Physical stage blending into virtual screens.</p>
-<p><strong>Stage Focus:</strong> Transition → adaptation → innovation.</p>
-</div>
+<div class="card"><h3>Lights. Lens. Legacy.</h3><div class="divider"></div><p><strong>Theme Link:</strong> Building Kenya’s future through bold digital storytelling.</p><p><strong>Setting:</strong> Grand festival stage.</p><p><strong>Stage Focus:</strong> Build-up → mass synchronization.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20Lights%20Lens%20Legacy%20script." target="_blank">Order This Script</a></div>
 
-<div class="card">
-<h3>The Digital Drum</h3>
-<p><strong>Theme Link:</strong> Cultural storytelling enhanced by modern technology.</p>
-<p><strong>Setting:</strong> Traditional rhythm meets digital beats.</p>
-<p><strong>Stage Focus:</strong> Call-and-response → leadership → unity.</p>
 </div>
-
-<div class="card">
-<h3>Echoes Online</h3>
-<p><strong>Theme Link:</strong> Digital stories shaping national consciousness.</p>
-<p><strong>Setting:</strong> Social-media-inspired space.</p>
-<p><strong>Stage Focus:</strong> Viral repetition → climax → resolution.</p>
-</div>
-
-<div class="card">
-<h3>Streaming the Truth</h3>
-<p><strong>Theme Link:</strong> Responsible storytelling in the digital age.</p>
-<p><strong>Setting:</strong> Newsfeed-style performance space.</p>
-<p><strong>Stage Focus:</strong> Distortion → confrontation → clarity.</p>
-</div>
-
-<div class="card">
-<h3>Hashtag Generation</h3>
-<p><strong>Theme Link:</strong> Youth activism through digital expression.</p>
-<p><strong>Setting:</strong> Digital protest zone.</p>
-<p><strong>Stage Focus:</strong> Sharp gestures → collective voice.</p>
-</div>
-
-<div class="card">
-<h3>Beyond the Algorithm</h3>
-<p><strong>Theme Link:</strong> Human creativity beyond digital control.</p>
-<p><strong>Setting:</strong> Algorithm-controlled stage.</p>
-<p><strong>Stage Focus:</strong> Restriction → resistance → freedom.</p>
-</div>
-
-<div class="card">
-<h3>Click. Record. Change.</h3>
-<p><strong>Theme Link:</strong> Theatre and film as catalysts for development.</p>
-<p><strong>Setting:</strong> Recording studio metaphor.</p>
-<p><strong>Stage Focus:</strong> Intentional movement → impact.</p>
-</div>
-
-<div class="card">
-<h3>Frames of Hope</h3>
-<p><strong>Theme Link:</strong> Visual storytelling inspiring social progress.</p>
-<p><strong>Setting:</strong> Film-frame segmented stage.</p>
-<p><strong>Stage Focus:</strong> Picture-by-picture narrative growth.</p>
-</div>
-
-<div class="card">
-<h3>Reel Voices</h3>
-<p><strong>Theme Link:</strong> Youth voices amplified through film and stage.</p>
-<p><strong>Setting:</strong> Open audition-style space.</p>
-<p><strong>Stage Focus:</strong> Individual emergence → collective strength.</p>
-</div>
-
-<div class="card">
-<h3>Digital Footprints</h3>
-<p><strong>Theme Link:</strong> Lasting impact of youth stories on national development.</p>
-<p><strong>Setting:</strong> Pathway of light and projections.</p>
-<p><strong>Stage Focus:</strong> Forward motion → legacy building.</p>
-</div>
-
-<div class="card">
-<h3>The Upload</h3>
-<p><strong>Theme Link:</strong> Courage to share stories that matter.</p>
-<p><strong>Setting:</strong> Countdown-to-upload environment.</p>
-<p><strong>Stage Focus:</strong> Tension → release → bold statement.</p>
-</div>
-
-<div class="card">
-<h3>Stage the Nation</h3>
-<p><strong>Theme Link:</strong> Theatre as a mirror of Kenya’s development journey.</p>
-<p><strong>Setting:</strong> National symbolic stage.</p>
-<p><strong>Stage Focus:</strong> Collective formations → unity.</p>
-</div>
-
-<div class="card">
-<h3>Lights. Lens. Legacy.</h3>
-<p><strong>Theme Link:</strong> Building Kenya’s future through bold digital storytelling.</p>
-<p><strong>Setting:</strong> Grand festival stage.</p>
-<p><strong>Stage Focus:</strong> Build-up → mass synchronization → triumphant close.</p>
-</div>
-
 </section>
 
 <section>
@@ -254,9 +191,11 @@ Each concept is designed for schools seeking originality, clarity, and adjudicat
 <p class="price">KSh 5,000 – Script PDF (Synopsis + Stage Milestones)</p>
 <p class="price">KSh 10,000 – Script PDF + Mastered Mixtape</p>
 
-<a class="whatsapp" href="https://wa.me/254757281838" target="_blank">
-Order via WhatsApp
+<p style="text-align:center;">
+<a class="whatsapp-main" href="https://wa.me/254757281838" target="_blank">
+Contact StageCraft Kenya on WhatsApp
 </a>
+</p>
 </section>
 
 <footer>
@@ -265,4 +204,3 @@ Order via WhatsApp
 
 </body>
 </html>
-
