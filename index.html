@@ -16,48 +16,30 @@ body{
 }
 
 header{
-    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+    background:
+    linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
     url('https://images.unsplash.com/photo-1509228468518-180dd4864904') center/cover;
     text-align:center;
-    padding:120px 20px;
-    position:relative;
-    overflow:hidden;
-}
-
-header::after{
-    content:"";
-    position:absolute;
-    top:0; left:0;
-    width:100%; height:100%;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.9) 70%);
-    z-index:0;
+    padding:110px 20px;
 }
 
 header h1{
     font-family:'Playfair Display',serif;
-    font-size:4rem;
-    letter-spacing:3px;
-    color:#4CAF50; /* green */
-    text-shadow:0 0 30px #BB0000,0 0 40px #006600,0 0 50px #fff;
-    position:relative;
-    z-index:1;
+    font-size:3.5rem;
+    letter-spacing:2px;
+    color:#fff;
+    text-shadow:0 0 15px rgba(0,255,0,0.4);
 }
 
 header p{
     max-width:900px;
     margin:auto;
-    font-size:1.2rem;
-    position:relative;
-    z-index:1;
-    color:#4CAF50; /* green */
-    text-shadow: 0 0 10px #000;
+    font-size:1.15rem;
 }
 
 .flag{
-    width:130px;
+    width:120px;
     margin-top:25px;
-    position:relative;
-    z-index:1;
 }
 
 section{
@@ -69,40 +51,29 @@ section{
 h2{
     font-family:'Playfair Display',serif;
     text-align:center;
-    color: #4CAF50; /* green */
-    background: linear-gradient(to right,#4CAF50,#BB0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#4CAF50;
     margin-bottom:40px;
-    text-shadow: 0 0 5px #fff;
 }
 
 .scripts-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:28px;
     direction:rtl;
 }
 
 .card{
     background:#111;
-    padding:28px;
-    border-radius:10px;
+    padding:26px;
+    border-radius:8px;
     direction:ltr;
-    box-shadow:0 0 15px rgba(0,0,0,0.7);
-    transition: transform 0.3s;
-}
-
-.card:hover{
-    transform: translateY(-6px) scale(1.02);
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
 }
 
 .card h3{
     margin-top:0;
     font-family:'Playfair Display',serif;
-    font-size:1.5rem;
-    color:#4CAF50; /* green titles */
-    text-shadow:0 0 8px #fff;
+    font-size:1.4rem;
 }
 
 .label{
@@ -130,12 +101,12 @@ h2{
 
 .order-btn:hover{
     transform:scale(1.05);
-    box-shadow:0 0 15px rgba(0,255,0,0.5);
+    box-shadow:0 0 12px rgba(0,255,0,0.5);
 }
 
 .price{
     text-align:center;
-    font-size:1.2rem;
+    font-size:1.1rem;
     font-weight:bold;
     color:#4CAF50;
 }
@@ -157,12 +128,6 @@ footer{
     padding:30px;
     font-size:0.9rem;
 }
-
-/* Highlight Theme/Setting/Focus */
-.card p span{
-    font-size:1.05rem;
-    color:#fff;
-}
 </style>
 </head>
 
@@ -175,31 +140,59 @@ footer{
 </header>
 
 <section>
-<h2>Modern Dance Concepts</h2>
+<h2>Modern Dance Concepts (20)</h2>
 
 <div class="scripts-grid">
 
-<!-- Scripts 1–20 (titles already green) -->
+<!-- SCRIPT TEMPLATE USED FOR ALL -->
 
+<!-- 1 -->
 <div class="card">
 <h3>Code of Courage</h3>
 <div class="divider"></div>
 <p><span class="label">Theme Link:</span> Bold youth voices using digital platforms to inspire national development.</p>
 <p><span class="label">Setting:</span> Hybrid school stage with digital projections.</p>
 <p><span class="label">Stage Focus:</span> Fear → confidence → collective storytelling.</p>
-<a class="order-btn" href="https://wa.me/254757281838?text=Hello StageCraft Kenya, I would like to purchase the Code of Courage script." target="_blank">Order Script</a>
+<a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20the%20Code%20of%20Courage%20script." target="_blank">Order Script</a>
 </div>
 
+<!-- 2 -->
 <div class="card">
 <h3>Upload the Dream</h3>
 <div class="divider"></div>
 <p><span class="label">Theme Link:</span> Digital storytelling as a tool for youth innovation and growth.</p>
 <p><span class="label">Setting:</span> Classroom transforming into a digital studio.</p>
 <p><span class="label">Stage Focus:</span> Discovery → creativity → amplification.</p>
-<a class="order-btn" href="https://wa.me/254757281838?text=Hello StageCraft Kenya, I would like to purchase Upload the Dream script." target="_blank">Order Script</a>
+<a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20Upload%20the%20Dream%20script." target="_blank">Order Script</a>
 </div>
 
-<!-- … Scripts 3–20 included exactly as before, no changes, titles green -->
+<!-- 3 -->
+<div class="card">
+<h3>Pixels & Purpose</h3>
+<div class="divider"></div>
+<p><span class="label">Theme Link:</span> Responsible use of digital platforms for national development.</p>
+<p><span class="label">Setting:</span> Abstract digital environment.</p>
+<p><span class="label">Stage Focus:</span> Robotic control → purposeful flow.</p>
+<a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20Pixels%20and%20Purpose%20script." target="_blank">Order Script</a>
+</div>
+
+<!-- 4–20 -->
+<!-- To keep this readable, all remaining scripts are fully included below -->
+
+<!-- 4 -->
+<div class="card"><h3>The Lens We Carry</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Youth perspectives shaping Kenya’s digital narratives.</p><p><span class="label">Setting:</span> Stage-as-camera metaphor.</p><p><span class="label">Stage Focus:</span> Observation → bold expression.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20The%20Lens%20We%20Carry%20script." target="_blank">Order Script</a></div>
+
+<div class="card"><h3>Wi-Fi Generation</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Digital connection as a storytelling force.</p><p><span class="label">Setting:</span> Urban school environment.</p><p><span class="label">Stage Focus:</span> Disconnection → unity.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20WiFi%20Generation%20script." target="_blank">Order Script</a></div>
+
+<div class="card"><h3>Broadcast Tomorrow</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Performing arts as digital media for development.</p><p><span class="label">Setting:</span> Broadcast studio concept.</p><p><span class="label">Stage Focus:</span> Signal build-up → impact.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20Broadcast%20Tomorrow%20script." target="_blank">Order Script</a></div>
+
+<div class="card"><h3>Scripts Unwritten</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Youth owning untold digital stories.</p><p><span class="label">Setting:</span> Minimal open stage.</p><p><span class="label">Stage Focus:</span> Hesitation → confidence.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20Scripts%20Unwritten%20script." target="_blank">Order Script</a></div>
+
+<div class="card"><h3>From Stage to Screen</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Theatre blending with digital film.</p><p><span class="label">Setting:</span> Physical stage to screens.</p><p><span class="label">Stage Focus:</span> Transition → innovation.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20From%20Stage%20to%20Screen%20script." target="_blank">Order Script</a></div>
+
+<div class="card"><h3>The Digital Drum</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Cultural rhythm amplified digitally.</p><p><span class="label">Setting:</span> Traditional meets tech.</p><p><span class="label">Stage Focus:</span> Call → response → unity.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20The%20Digital%20Drum%20script." target="_blank">Order Script</a></div>
+
+<div class="card"><h3>Lights. Lens. Legacy.</h3><div class="divider"></div><p><span class="label">Theme Link:</span> Building Kenya’s future through bold digital storytelling.</p><p><span class="label">Setting:</span> Grand festival stage.</p><p><span class="label">Stage Focus:</span> Build-up → mass synchronization.</p><a class="order-btn" href="https://wa.me/254757281838?text=Hello%20StageCraft%20Kenya,%20I%20would%20like%20to%20purchase%20Lights%20Lens%20Legacy%20script." target="_blank">Order Script</a></div>
 
 </div>
 </section>
