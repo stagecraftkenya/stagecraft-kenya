@@ -37,131 +37,75 @@ header::after{
 header h1{
     font-family:'Playfair Display',serif;
     font-size:4rem;
-    letter-spacing:3px;
-    color:#fff;
-    text-shadow:0 0 30px #fff,0 0 40px #fff,0 0 50px #fff;
-    position:relative;
-    z-index:1;
+    
+<header>
+  <!-- Logo centered above title -->
+  <img class="logo" src="A_logo_for_StageCraft_Kenya.png" alt="StageCraft Kenya Logo">
+
+  <!-- Main title centered -->
+  <h1>STAGECRAFT KENYA</h1>
+  <p><strong>Bold Storytellers, Digital Stages:</strong> Driving Kenya’s Development Through Theatre and Film</p>
+
+  <!-- Kenyan flag centered below the text -->
+  <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag">
+</header>
+
+<style>
+/* Logo styling */
+header .logo {
+  width: 150px; /* adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  z-index: 2;
 }
 
-header p{
-    max-width:900px;
-    margin:auto;
-    font-size:1.2rem;
-    position:relative;
-    z-index:1;
-    color:#4CAF50;
+/* Flag styling */
+header .flag {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin: 20px auto 0 auto;
+  z-index: 2;
 }
 
-.flag{
-    width:130px;
-    margin-top:25px;
-    position:relative;
-    z-index:1;
+/* Header styling */
+header {
+  background:
+    linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+    url('https://images.unsplash.com/photo-1509228468518-180dd4864904') center/cover;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:60px 20px;
+header::after {
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.9) 70%);
+  z-index:0;
 }
 
-h2{
-    font-family:'Playfair Display',serif;
-    text-align:center;
-    background: linear-gradient(to right,#4CAF50,#BB0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom:40px;
+header h1 {
+  font-family:'Playfair Display',serif;
+  font-size:4rem;
+  letter-spacing:3px;
+  color:#fff;
+  text-shadow:0 0 30px #fff,0 0 40px #fff,0 0 50px #fff;
+  position:relative;
+  z-index:1;
 }
 
-.scripts-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:28px;
-    direction:rtl;
-}
-
-.card{
-    background:#111;
-    padding:28px;
-    border-radius:10px;
-    direction:ltr;
-    box-shadow:0 0 15px rgba(0,0,0,0.7);
-    transition: transform 0.3s;
-}
-
-.card:hover{
-    transform: translateY(-6px) scale(1.02);
-}
-
-.card h3{
-    margin-top:0;
-    font-family:'Playfair Display',serif;
-    font-size:1.5rem;
-    color:#4CAF50;
-}
-
-.label{
-    color:#4CAF50;
-    font-weight:600;
-}
-
-.divider{
-    height:6px;
-    background:linear-gradient(to right,#000,#BB0000,#006600);
-    margin:16px 0;
-}
-
-.order-btn{
-    display:inline-block;
-    margin-top:18px;
-    padding:13px 22px;
-    background:linear-gradient(90deg,#BB0000,#006600);
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:30px;
-    transition:transform 0.2s, box-shadow 0.2s;
-}
-
-.order-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px rgba(0,255,0,0.5);
-}
-
-.price{
-    text-align:center;
-    font-size:1.2rem;
-    font-weight:bold;
-    color:#4CAF50;
-}
-
-.whatsapp-main{
-    display:inline-block;
-    margin-top:25px;
-    background:#25D366;
-    color:#000;
-    padding:16px 32px;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:40px;
-}
-
-footer{
-    background:#111;
-    text-align:center;
-    padding:30px;
-    font-size:0.9rem;
-}
-
-.card p{
-    color:#fff; /* plain white description text */
-}
-
-.card p span{
-    font-size:1.05rem;
-    color:#4CAF50;
+header p {
+  max-width:900px;
+  margin:auto;
+  font-size:1.2rem;
+  position:relative;
+  z-index:1;
+  color:#4CAF50;
 }
 </style>
 </head>
@@ -339,3 +283,4 @@ Chat with StageCraft Kenya on WhatsApp
 <p>© 2026 StageCraft Kenya | Empowering Bold Storytellers</p>  
 </footer>  </body>  
 </html>  This is the current one
+
